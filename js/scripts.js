@@ -49,7 +49,10 @@ $(document).ready(function(){
       newAccount.makeTransaction(-amount);
       displayTotal(newAccount.total);
     }
-    $('#transactionInput')[0].reset();
+    // $('#amountInput').text("");
   });
+  $("button#reset").click(function(event){
+    location.reload();
+    });
 
 });
